@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a#youtube::before {
+            content: '∝';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+
+        a#youtube::after {
+            content: '∝';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+
+        a#youtube:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul type="disk">
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external" id="youtube">Youtube</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="external">Instagram</a></li>
+    </ul>
+</body>
+</html>
