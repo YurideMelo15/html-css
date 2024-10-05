@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        Anatomia das tabelas grandes: 
+        Table 
+            Thead
+                tr,td,th
+            Tbody 
+                tr, td, th
+            Tfoot
+                tr, td, th
+    -->
+
+
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 344 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 608 865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarona</td>
+                <td class="num">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 075 181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Epírito Santo</td>
+                <td class="num">4 018 650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 018 127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 506 853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 484 466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 337 357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 273 227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 015 268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 778 986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 298 696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 777 225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 572 866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">881 935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">848 731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605 761</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique dignissimos mollitia assumenda suscipit illo, molestiae, nisi at magnam incidunt veritatis est nesciunt iure harum? Rerum voluptatem consequatur est repellendus sapiente doloribus aspernatur, modi asperiores ad, quidem soluta aliquam quisquam maxime, vero et. Modi, eaque? Nobis cumque aut asperiores doloribus sunt totam nulla enim necessitatibus libero aspernatur deleniti quis, ipsa expedita quaerat consequatur cum. Voluptatem deleniti hic, suscipit porro accusamus in ut commodi cumque magnam mollitia reiciendis atque a cum corrupti architecto officiis tempora, veritatis nisi non aspernatur laboriosam eaque autem optio. Illum assumenda reprehenderit quasi veritatis magni amet, repudiandae voluptatem enim quos repellendus placeat nam natus iusto, excepturi fugit quaerat alias praesentium! Aut, eligendi doloribus nobis iste eius asperiores nam consequuntur at voluptatum. Veniam aliquam debitis inventore commodi est officiis nulla tempora quidem eos blanditiis numquam perferendis sequi maxime, possimus deserunt voluptas libero impedit nobis! Quis sunt eveniet ipsam commodi dolor aliquid eligendi sit non ducimus, quaerat excepturi unde eaque natus ab, qui libero voluptatem provident ut inventore beatae pariatur minus similique a. Alias magnam libero quibusdam. Quos officia praesentium quae modi rem magni exercitationem similique! Facilis, nisi nulla enim ex illo facere cumque deserunt, dolorem cum pariatur minus excepturi deleniti hic expedita molestias quisquam at odio quae qui quod aliquid voluptates! Facilis consequuntur autem maxime in. Adipisci corporis repellendus quo, nesciunt laudantium temporibus pariatur sed nemo harum, earum maxime? Maxime molestias ducimus ipsa perferendis? Minus incidunt eos, dolores vel aliquid excepturi! Maxime nulla rem ullam quod necessitatibus nesciunt ex quisquam consequatur adipisci voluptatem! Aut, necessitatibus delectus. Debitis delectus saepe eligendi aperiam aliquam nam eaque impedit maiores. Laborum omnis necessitatibus molestias id distinctio qui accusamus natus, eius quos similique quas maiores quis adipisci assumenda excepturi sint perspiciatis quisquam tempora officia eum atque alias delectus. Impedit inventore veniam nemo doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ad hic! Eaque minima, tempore quia ipsum commodi temporibus. Doloremque, ea facere nisi ducimus qui laboriosam? Dicta consequuntur pariatur, distinctio minus ipsum, dignissimos nesciunt nisi quidem tempora eius cumque aliquam iusto ipsa reiciendis illum tempore a unde! At error totam optio, quos odit recusandae eligendi est omnis consequatur rem aut, odio cumque deleniti. Temporibus vero quo, exercitationem, sit quidem dolorum dolorem fugit animi et, corporis quae iusto. Ipsam rem sit laborum dolore repudiandae in maiores incidunt voluptate facilis provident eius sequi sunt, perferendis molestias expedita quasi saepe ipsa officia quos. Amet qui quidem dolores alias magnam, laborum laudantium dolorem exercitationem quo obcaecati nam aliquam tenetur quibusdam beatae perferendis optio neque! Illum quos fugit iusto, debitis, cupiditate facere et iure nulla, minima perferendis vero ullam soluta cumque ex? Obcaecati totam tempora molestiae omnis, atque debitis ut similique eveniet quas ab blanditiis saepe eligendi sint quae odit dignissimos esse dolore harum libero, doloremque perspiciatis. Excepturi molestiae similique explicabo, nam minus maxime, error doloremque autem beatae hic voluptatem! Quisquam ab, soluta veritatis obcaecati dicta eius numquam? Debitis minima beatae minus molestias suscipit quae corrupti ex nobis sequi, cupiditate, ipsa vero dolor delectus voluptatum distinctio optio. Esse iste illo deleniti voluptatem voluptas, obcaecati alias modi ex fugit laborum voluptates tempora asperiores debitis fuga at labore ratione. Doloremque voluptatibus quaerat, perferendis quis incidunt in reiciendis, non soluta dolorum, sint qui exercitationem molestias unde nemo? A nam repellendus, est aspernatur harum explicabo. Ipsum nihil assumenda magni sunt est, fugiat a deleniti laudantium accusantium doloribus amet rem cum quas, similique asperiores laborum beatae sed, vitae aliquam deserunt? Architecto nihil eveniet enim incidunt accusantium omnis, ratione modi sapiente voluptatem temporibus esse, similique repellendus placeat dolorum cumque magni nam repellat itaque sint laudantium fugit perferendis error distinctio repudiandae? Ratione, architecto?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim, optio voluptates officia a nisi ex molestias totam laborum nulla necessitatibus reprehenderit eaque perferendis harum voluptatum, corporis alias accusamus commodi accusantium vitae atque mollitia aperiam! Corrupti natus vel dolorum reprehenderit quos maiores, ex non. Accusamus, beatae dolor odio quae saepe excepturi facere enim maxime quod sapiente autem. Laborum cumque iure, ea libero atque alias sed minus excepturi consectetur dolorem amet pariatur voluptate aut sequi ratione accusantium delectus mollitia soluta nobis quas! Commodi culpa quaerat doloribus officia quae quibusdam architecto fuga, ipsam vero fugiat earum perspiciatis totam eaque illum dolore veniam maxime cumque rem qui! Ipsa deserunt perferendis culpa quibusdam soluta? Vero porro itaque ut? Esse quasi placeat maxime dolore inventore totam perferendis ipsum accusantium eos voluptates deleniti, et quaerat quidem tenetur consequuntur temporibus porro officiis? Fugit perspiciatis mollitia, distinctio ea laboriosam ipsa consequatur neque nisi et magnam, commodi odit dolorum in? Minima harum ducimus illo quas? Molestiae vitae nam consectetur eos harum facilis aspernatur, pariatur consequuntur vero, deserunt quod. Ipsa, molestiae. Optio, nam molestiae tempora, totam sint beatae et sequi perspiciatis ipsum atque repudiandae aliquam esse explicabo fuga maxime consectetur expedita quas! Deserunt suscipit eos hic, quos velit odit consequatur distinctio voluptate quas provident officia perspiciatis tempora debitis, laudantium expedita, veritatis totam dignissimos neque odio nobis! Voluptates delectus consequuntur, ipsum recusandae sunt eligendi dolorem beatae qui, minus, dolor accusamus nam iste facilis. Nemo, libero obcaecati? Fugit consequuntur commodi non consectetur impedit, incidunt corrupti saepe suscipit explicabo ut nostrum, aliquam itaque quis ex? Ad culpa debitis corrupti expedita! Minima fugiat velit reiciendis suscipit quasi consequatur eum repellat at facere sit voluptates vitae ex architecto necessitatibus vel facilis, nobis vero, in nulla possimus aliquid eius blanditiis! Officia hic quibusdam eligendi similique iste, itaque quo odit quis, ex laboriosam deserunt dolores dolore saepe!</p>
+</body>
+</html>
