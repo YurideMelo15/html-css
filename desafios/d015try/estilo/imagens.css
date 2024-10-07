@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+img {
+    width: 270px;
+    height: 475px;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
