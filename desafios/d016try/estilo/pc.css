@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, #4B939A, #552774);
+    background-attachment: fixed;
+}
+
+main {
+    width: 890px;
+    margin-top: 150px;
+}
+
+div#img {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    height: 338px;
+    border-radius: 0px 20px 20px 0px;
+    width: 450px;
+    background-position: right bottom;
+}
+
+section#todo {
+    display: inline-block;
+    width: 440px;
+}
+
+section#text {
+    font-size: 21px;
+    text-align: justify;
+}
+
+section#text > p {
+    font-size: 16px;
+}
+
+input#iemail {
+    width: 368px;
+}
+input#isenha {
+    width: 368px;
+}
+
+section.campo2  > input {
+    padding: 15px;
+    width: 422px;
+}

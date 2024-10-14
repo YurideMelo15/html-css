@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: #5F2C82;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
+}
+
+main {
+    margin: auto;
+    margin-top: 50px;
+    width: 257px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.418);
+}
+
+div#img {
+    border-radius: 20px 20px 0px 0px;
+    background-image: url('../images/metal.jpg');
+    background-size: cover;
+    background-position:  left bottom;
+    width: 257px;
+    height: 200px;
+}
+
+section {
+    padding: 5px;
+}
+
+section#text {
+    padding: 5px;
+}
+
+section#text > h1 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section#text > p {
+    font-size: small;
+    text-align: justify;
+}
+
+section.campo {
+    margin-left: 5px;
+    background-color: #5F2C82;
+    display: inline-block;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+}
+
+input#iemail {
+    border-radius: 7px;
+    width: 170px;
+    padding: 10px;
+    background-color: #94CFCD;
+    border: transparent;
+}
+
+input#isenha {
+    border-radius: 7px;
+    width: 170px;
+    padding: 10px;
+    background-color: #94CFCD;
+    border: transparent;
+}
+
+span {
+    color: white;
+}
+
+section.campo2 > input {
+    padding: 15px;
+    width: 230px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: transparent;
+}
+
+input#enviar {
+    color: white;
+    background-color: #4daca8;
+}
+
+input#enviar:hover {
+    background-color: #2D6462;
+}
+
+input#senha {
+    background-color: white;
+    border: 1px solid #4daca8;
+}
+
+input#senha:hover {
+    background-color: #6CD3CF;
+    color: #2D6484;
+}
+
